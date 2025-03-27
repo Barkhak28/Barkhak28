@@ -1,151 +1,66 @@
-# 🚀 Cloud-Based Business Licencing Analytics Platform | City of Vancouver (2013–2024)
+# Transforming Open Data into Actionable Insights: A Cloud Architecture Case
 
-> **Capstone Project | Cloud Computing Portfolio**  
-> Author: [Your Full Name]  
-> Course: BUSI 653 – Cloud Computing  
-> Data Source: [City of Vancouver Open Data Portal](https://opendata.vancouver.ca)  
-> Tools Used: AWS EC2, S3, Glue, Athena, CloudWatch, CloudTrail, DataBrew, KMS  
-> Timeline: 2013–2024
+## Cloud Computing & Business Insights: CloudCatalyst Portfolio
 
----
+### Project Overview
+**CloudCatalyst Portfolio** demonstrates leveraging **AWS Cloud Computing** to transform open data into strategic insights. The project involved designing and deploying a cloud-native Data Analytic Platform (DAP) on AWS for analyzing the City of Vancouver’s business license data (2013–2024). This comprehensive solution illustrates skills in data ingestion, cleansing, analytics, security, and governance, providing meaningful insights to policymakers and stakeholders.
 
-## 📘 Project Overview
+### Objectives
+- **Cloud-Native Pipeline:** Build a scalable, serverless analytics pipeline.
+- **Data Preparation & Analysis:** Clean, profile, and analyze business license data.
+- **Security & Governance:** Implement data encryption, access control, and monitoring.
+- **AWS Proficiency Showcase:** Demonstrate AWS expertise (S3, Glue, Athena, KMS, CloudWatch, CloudTrail).
+- **Deliver Business Insights:** Provide actionable insights for policy-makers using visualizations and analytical summaries.
 
-This capstone project presents a full-stack AWS implementation of a data analytics platform for the **City of Vancouver's Business Licencing dataset (2013–2024)**. The solution integrates real-time ingestion, cleaning, transformation, analysis, data governance, and security.
+### Dataset Source & Description
+Sourced from the City of Vancouver's Open Data Portal, this dataset includes comprehensive records of business licences issued from 2013 to May 2024. It features license numbers, business names, types, issuance dates, expiry dates, and anonymized location data.
 
-🧭 **Objective**: To create a secure, automated, and analytically-ready data platform that enables decision-makers to explore trends, enforce data governance, and monitor performance through descriptive analytics.
+### Cloud Architecture Overview
+The architecture utilizes AWS services in a fully-managed, serverless configuration for ease of use, scalability, and robustness:
 
----
+- **Amazon S3:** Central storage (Data Lake) for raw, processed, and analytical outputs. *(Figure No. #32, Part 1: S3 Bucket Showing Uploaded File)*
+- **AWS Glue DataBrew:** Visual data profiling and interactive data cleaning.
+- **AWS Glue Data Catalog:** Metadata management and schema cataloguing.
+- **Amazon Athena:** Serverless querying and analytics directly on S3-stored data.
+- **AWS KMS:** Encryption and secure data storage management.
+- **AWS CloudTrail:** Comprehensive operational and security logging.
+- **Amazon CloudWatch:** Real-time monitoring, alerts, and dashboards.
 
-## 📦 Dataset Description
+### Project Execution
 
-The dataset includes over a decade of open licensing records from the City of Vancouver. Each record captures:
+#### Phase 1: Data Platform Setup & Summarization
+Focused on establishing the DAP by securely ingesting, profiling, cleaning, cataloguing data, and performing exploratory analysis using AWS Glue and Athena.
 
-- 📄 **Licence Details**: Licence number, issue/expiry dates, status  
-- 🏢 **Business Info**: Name, type, sub-type  
-- 🌎 **Location**: Full address, postal code, coordinates  
-- 👥 **Employee Info**: Count by gender, part/full-time  
-- 🗓️ **Timeline**: 2013 to 2024  
+*(Insert Figure No. #32 from Part 1: “S3 Bucket Showing Uploaded File”)*  
+*(Add additional relevant figures: DataBrew Profiling, Glue Crawlers, Athena Queries.)*
 
----
+#### Phase 2: Advanced Analysis, Security & Monitoring
+Built upon Phase 1 to refine insights and fortify the platform with advanced security measures and monitoring:
 
-## 🧩 System Architecture
+- **Deeper Analysis:** Used Athena to uncover detailed trends (e.g., license growth by neighborhoods).
+- **Data Security:** Implemented KMS encryption and bucket replication.
+- **Data Governance:** Ensured data quality checks and governance with Glue’s visual ETL.
+- **Real-Time Monitoring:** Established CloudWatch dashboards and CloudTrail for compliance.
 
-### ✅ Phase 1: End-to-End Ingestion + Cleaning + Storage
+*(Insert Figure from Part 2: Figure No. #41 - "CloudWatch Dashboard for Project Metrics")*
 
-> *Figure No. 1 (Part 1): AWS Architecture Overview*
+### Key Insights & Outputs
+Insights derived revealed the pandemic’s significant impact on business licensing, the rapid growth in personal services licenses, and shifting business demographics across Vancouver. Detailed visual analytics provide stakeholders with actionable insights.
 
-- **EC2**: Used for secure transfer of raw files from operational teams  
-- **Amazon S3**: Versioned and KMS-encrypted buckets for raw, cleaned, and transfer data  
-- **AWS Glue DataBrew**: Profiling and cleaning operations with visual transformations  
-- **AWS Glue Crawler + Catalog**: Metadata management for discoverability  
-- **AWS Athena**: SQL-based querying of partitioned data  
-- **AWS CloudTrail + CloudWatch**: Full-stack activity logging and performance monitoring  
-- **KMS**: Central encryption for all data lifecycle stages  
+- *(Insert Figure from Part 1: Figure No. #28 - "Year-by-Year Business Licensing Trends")*
 
----
+### Reflections & Professional Growth
+This project significantly enhanced my understanding of cloud analytics, security best practices, and effective data governance. It taught me practical solutions for managing large-scale data securely, efficiently, and cost-effectively.
 
-## 🔍 Phase 2: Analytics + Governance + Monitoring
+### Tools & Technologies Used
+- **Data Storage & Management:** Amazon S3
+- **Data Cleaning & Profiling:** AWS Glue DataBrew
+- **Data Cataloging & Schema Management:** AWS Glue Data Catalog & Crawlers
+- **Query & Analysis:** Amazon Athena
+- **Security & Compliance:** AWS KMS, AWS IAM
+- **Monitoring & Logging:** Amazon CloudWatch, AWS CloudTrail
 
-> *Figure No. 2 (Part 2): Visual ETL Governance Flow*  
-> *Figure No. 3 (Part 2): CloudWatch Dashboard*
+### Connect with Me
+Thank you for reviewing this project! I'm keen to collaborate or discuss this work further. Connect with me on [LinkedIn](your-link-here).
 
-### 📊 Analytical Layer
-
-- Built separate outputs for:
-  - **System-Level (Parquet/Snappy)**: Efficient analytics processing  
-  - **User-Level (CSV)**: Easy stakeholder access  
-- Executed Athena SQL queries to extract:
-  - Total licences issued by year  
-  - Total fees collected (SumFeePaid)
-
-### 🛡️ Data Governance
-
-- Applied **3 Data Quality Rules** via Visual ETL:
-  - Completeness (>95%)  
-  - Uniqueness (>99%)  
-  - Freshness (<1279 days)
-- Used conditional routers to split data into:
-  - ✅ Passed → Partitioned in S3  
-  - ❌ Failed → Stored separately for rework
-
-> *Figure No. 4 (Part 2): ETL Job – Data Quality Routing*  
-> *Figure No. 5 (Part 2): Glue Job Success Output*
-
-### 🖥️ Monitoring
-
-- **CloudWatch Dashboard** for:
-  - Bucket size metrics
-  - Glue resource usage
-  - Alarms with SNS notifications  
-- **CloudTrail Logs**:
-  - User actions
-  - API usage
-  - Service calls for auditability
-
----
-
-## 🔐 Data Security Strategy
-
-> *Figure No. 6 (Part 2): S3 Encryption and Versioning Setup*  
-> *Figure No. 7 (Part 2): KMS Key Creation and Mapping*
-
-- Server-side encryption (SSE-KMS) on all S3 buckets  
-- Versioning for recovery and rollback  
-- Cross-region replication for disaster resilience
-
----
-
-## 🛠️ Technologies & AWS Services Used
-
-| Code | Service             | Purpose                                                                 |
-|------|----------------------|-------------------------------------------------------------------------|
-| A    | **Amazon EC2**       | Raw file transfer point; secure CLI-based upload                       |
-| B    | **Amazon S3**        | Primary storage with encryption, versioning, and tiered buckets        |
-| C    | **AWS Glue**         | Visual ETL transformations, data quality checks, and metadata catalog  |
-| D    | **DataBrew**         | Visual profiling, cleaning, and formatting                             |
-| E    | **Athena**           | Query engine to summarize insights without infrastructure              |
-| F    | **CloudWatch**       | Metric monitoring, dashboards, custom alerts                           |
-| G    | **CloudTrail**       | Compliance and activity tracking logs                                  |
-| H    | **KMS**              | Encryption key management for data-in-transit and at-rest              |
-| I    | **SNS**              | Notification system for alerts                                         |
-
----
-
-## 📈 Key Insights & Highlights
-
-- 📅 **Peak years** for business licence issuance: 2016, 2019, and 2023  
-- 🧾 **Sum of fees collected**: Clear growth trend tied to regulatory updates  
-- 🧹 **Common data quality issues**: Missing expiry dates, duplicated licence numbers  
-- 🔐 **Security**: Successfully implemented versioned, encrypted, and replicated buckets  
-- 🧠 **Governance**: Automated filtering and separation of failed records for cleaning
-
----
-
-## 🎯 Final Deliverables
-
-- ✅ Functional AWS deployment (EC2, S3, Glue, Athena)  
-- 📁 Secure storage layers with SSE-KMS and replication  
-- 🔎 Descriptive analytics pipeline with SQL queries  
-- 📊 Dashboards and metrics for governance and performance  
-- 📚 Full documentation of methods, figures, and architecture  
-
----
-
-## 🤝 Acknowledgements
-
-This project was conducted under the **Cloud Computing Capstone (BUSI 653)** with support from the instructional team and data provided by the **City of Vancouver Open Data Portal**.
-
----
-
-## 📂 Repository Structure
-
-```bash
-📁/figures/
-    ├── Part1_AWS_Architecture.png
-    ├── Part2_Glue_ETL_Job.png
-📁/scripts/
-    └── Athena_queries.sql
-📁/docs/
-    └── Report_Part1_Part2.pdf
-README.md
+_This CloudCatalyst Portfolio demonstrates deep analytical expertise and strategic implementation of AWS to provide insightful, actionable business analytics for the City of Vancouver’s business licensing operations._
