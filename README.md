@@ -21,7 +21,7 @@ This initiative exemplifies the practical application of cloud computing in extr
 </details>
 
 <details>
-  <summary><strong>📂 Dataset</strong></summary>
+  <summary><strong>Dataset</strong></summary>
 
 The dataset for this project is sourced from the [City of Vancouver Open Data Portal](https://opendata.vancouver.ca/explore/dataset/business-licences-2013-to-2024/) and includes business licensing records from **2013 up to May 5, 2024**.
 
