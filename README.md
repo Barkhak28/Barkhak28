@@ -54,7 +54,7 @@ The raw data (downloaded as CSV from Vancouver’s Open Data Portal) was **inges
 <p align="center">
   <img src="images/figure_32_part2.png" alt="Encryption Settings for Raw Data Bucket" width="500">
 </p>
-<em>Figure No. 32 (Part 2 – Encryption Settings for Raw Data Bucket)</em>  
+
 _Note_: Demonstrates secure storage of raw dataset using AWS KMS-managed keys.
 
 ---
@@ -65,7 +65,6 @@ Using **AWS Glue DataBrew**, the dataset was profiled and cleaned through a no-c
 <p align="center">
   <img src="images/figure_35_part1.png" alt="AWS Glue DataBrew Cleaning Recipe Configuration" width="500">
 </p>
-<em>Figure No. 35 (Part 1 – AWS Glue DataBrew Cleaning Recipe Configuration)</em>  
 
 _Note:_ Highlights visual transformation steps applied to prepare clean, queryable data.
 
@@ -87,7 +86,6 @@ An **AWS Glue Data Catalog** database and table were set up to catalog the clean
 <p align="center">
   <img src="images/figure_30_part2.png" alt="Athena SQL Query for Aggregating Licence Data by Year" width="500">
 </p>
-<em>Figure No. 30 (Part 2 – Athena SQL Query for Aggregating Licence Data by Year)</em>  
 
 _Note_ Illustrates the SQL used to derive key annual business metrics using Amazon Athena.
 
@@ -99,8 +97,8 @@ Throughout the process, **AWS CloudWatch** and **AWS CloudTrail** were enabled t
 <p align="center">
   <img src="images/figure_44_part2.png" alt="AWS CloudWatch Dashboard for Project Metrics" width="500">
 </p>
-<em>Figure No. 44 (Part 2 – AWS CloudWatch Dashboard for Project Metrics)</em>  
-<em>Note:</em> Displays usage metrics and query performance logs for data pipeline visibility.
+
+_Note:_ Displays usage metrics and query performance logs for data pipeline visibility.
 </p>
 
 </details>
@@ -115,8 +113,8 @@ Scalable object storage used as the data lake for this project. Raw CSV data and
 <p align="center">
   <img src="images/figure_28_part2.png" alt="System-Level Analytical Output in Parquet Format" width="500">
 </p>
-<em>Figure No. 28 (Part 2 – System-Level Analytical Output in Parquet Format)</em>  
-<em>Note:</em> Demonstrates how business licence data is efficiently stored in parquet format within the S3 data lake for high-performance querying.
+
+_Note:_ Demonstrates how business licence data is efficiently stored in parquet format within the S3 data lake for high-performance querying.
 
 ---
 
@@ -126,8 +124,8 @@ A visual data preparation tool that was used to clean and transform the licence 
 <p align="center">
   <img src="images/figure_26_part2.png" alt="AWS Glue DataBrew Interface Showing Project" width="500">
 </p>
-<em>Figure No. 26 (Part 2 – AWS Glue DataBrew Interface Showing “busi-lic-semi-prj-bar” Project)</em>  
-<em>Note:</em> Highlights the no-code interactive data transformation workspace used in the analysis pipeline.
+
+_Note:_ Highlights the no-code interactive data transformation workspace used in the analysis pipeline.
 
 ---
 
@@ -143,7 +141,7 @@ A serverless interactive query service that allows execution of SQL queries on d
   <img src="images/figure_30_part2.png" alt="Athena SQL Query for Aggregating Licence Data by Year" width="500">
 </p>
 <em>Figure No. 30 (Part 2 – Athena SQL Query for Aggregating Licence Data by Year)</em>  
-<em>Note:</em> SQL-based querying directly over S3-integrated datasets enabled rapid analysis without provisioning compute.
+_Note:_ SQL-based querying directly over S3-integrated datasets enabled rapid analysis without provisioning compute.
 
 ---
 
@@ -153,8 +151,8 @@ Managed encryption keys used to encrypt data in S3 and protect sensitive informa
 <p align="center">
   <img src="images/figure_31_part2.png" alt="Creating Encryption Keys Using AWS KMS" width="500">
 </p>
-<em>Figure No. 31 (Part 2 – Creating Encryption Keys)</em>  
-<em>Note:</em> Displays symmetric encryption key creation for securing sensitive datasets.
+
+_Note:_ Displays symmetric encryption key creation for securing sensitive datasets.
 
 ---
 
@@ -164,8 +162,8 @@ Monitoring service used to collect and track metrics and logs from DataBrew and 
 <p align="center">
   <img src="images/figure_44_part2.png" alt="AWS CloudWatch Dashboard for Project Metrics" width="500">
 </p>
-<em>Figure No. 44 (Part 2 – AWS CloudWatch Dashboard for Project Metrics)</em>  
-<em>Note:</em> Dashboards monitored resource usage, job success, and failures in near real-time.
+
+_Note:_ Dashboards monitored resource usage, job success, and failures in near real-time.
 
 ---
 
@@ -175,8 +173,8 @@ Governance and auditing service enabled to log all actions taken on AWS resource
 <p align="center">
   <img src="images/figure_45_part2.png" alt="AWS CloudTrail Logging for Activity Tracking" width="500">
 </p>
-<em>Figure No. 45 (Part 2 – AWS CloudTrail Logging for Activity Tracking)</em>  
-<em>Note:</em> Activity logs recorded all user actions across AWS services for accountability and audit compliance.
+
+_Note:_ Activity logs recorded all user actions across AWS services for accountability and audit compliance.
 
 ---
 
@@ -197,8 +195,8 @@ A structured data lake containing the processed business licence data in parquet
 <p align="center">
   <img src="images/figure_28_part2.png" alt="System-Level Analytical Output in Parquet Format" width="500">
 </p>
-<em>Figure No. 28 (Part 2 – System-Level Analytical Output in Parquet Format)</em>  
-<em>Note:</em> Displays optimally formatted, analytics-ready business licence data stored in Amazon S3.
+
+_Note:_ Displays optimally formatted, analytics-ready business licence data stored in Amazon S3.
 
 ---
 
@@ -208,8 +206,8 @@ An AWS Glue DataBrew recipe (and job) encapsulates all data-cleaning steps. This
 <p align="center">
   <img src="images/figure_27_part2.png" alt="Successful Execution of AWS Glue DataBrew Job" width="500">
 </p>
-<em>Figure No. 27 (Part 2 – Successful Execution of AWS Glue DataBrew Job)</em>  
-<em>Note:</em> A successful job ensures a validated transformation process and ready-to-query dataset.
+
+_Note:_ A successful job ensures a validated transformation process and ready-to-query dataset.
 
 ---
 
@@ -219,8 +217,8 @@ A collection of saved SQL queries in Amazon Athena is used to generate key insig
 <p align="center">
   <img src="images/figure_30_part2.png" alt="Athena SQL Query for Aggregating Licence Data by Year" width="500">
 </p>
-<em>Figure No. 30 (Part 2 – Athena SQL Query for Aggregating Licence Data by Year)</em>  
-<em>Note:</em> Illustrates interactive querying used to summarize and analyze annual licensing metrics.
+
+_Note:_ Illustrates interactive querying used to summarize and analyze annual licensing metrics.
 
 ---
 
@@ -230,8 +228,8 @@ Graphical outputs highlighting important findings. For example, the Figure below
 <p align="center">
   <img src="images/figure_28_part1.png" alt="Business Licensing Activity Patterns and Fee Contributions 2013–2024" width="500">
 </p>
-<em>Figure No. 28 (Part 1 – A graph for business licensing activity patterns and yearly contributions from business authorization fees in White Rock city from 2013–2024)</em>  
-<em>Note:</em> Displays annual issued licence counts and total fees, highlighting economic fluctuations and growth trends.
+
+_Note:_ Displays annual issued licence counts and total fees, highlighting economic fluctuations and growth trends.
 
 ---
 
@@ -251,8 +249,8 @@ Below Figure - Business Licensing Activity Patterns. The chart above illustrates
 <p align="center">
   <img src="images/figure_28_part1.png" alt="Business Licensing Activity Patterns and Fee Contributions 2013–2024" width="500">
 </p>
-<em>Figure No. 28 (Part 1 – A graph for business licensing activity patterns and yearly contributions from business authorization fees in White Rock city from 2013–2024)</em>  
-<em>Note:</em> Displays annual issued licence counts and total fees, highlighting economic fluctuations and growth trends.
+
+_Note:_ Displays annual issued licence counts and total fees, highlighting economic fluctuations and growth trends.
 
 <p>
 
