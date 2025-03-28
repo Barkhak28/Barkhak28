@@ -10,6 +10,7 @@ _Cloud Computing Foundation_ certification badge earned by **Barkha Kukreja**, d
   <summary><strong>Objective</strong></summary>
 
 <p>
+  
 This project aimed to develop an end-to-end **Data Analytic Platform (DAP)** on AWS to analyze **City of Vancouver business license data (2013–2024)** and uncover meaningful business insights. This involved designing a robust cloud-based data pipeline to ingest and process a large public dataset, ensure data quality and security, and enable interactive analysis. By accomplishing this, the project demonstrates how cloud services can transform open data into valuable insights into urban business activity, supporting data-driven decision-making for stakeholders (e.g., city officials, entrepreneurs, or potential investors).
 </p>
 
