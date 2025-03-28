@@ -42,10 +42,14 @@ In total, this dataset comprises over **780,000 records**, presenting an extensi
 
 ### **Dataset Visualization:**
 
-- **Annual Licensing Trends:** Include the visualization titled: 
-  - **Figure No. 28 (Part 1)** – *"A graph for business licensing activity patterns and yearly contributions from business authorization fees in White Rock city from 2013-2024."*  
-  - **Note:** Displays annual issued licence counts and total fees, highlighting economic fluctuations and growth trends over the study period.
+- **Annual Licensing Trends:**
+**Figure 1.**
+  A graph for business licensing activity patterns and yearly contributions from business authorization fees in White Rock city from 2013-2024."
+ <p align="center">
+<img src="images/figure_28_part1.png" alt="A graph for business licensing activity patterns and yearly contributions from business authorization fees in White Rock city from 2013-2024" width="500">
+</p>
 
-**Place this figure image (`figure_28_part1.png`) in your repository’s `/images` sub-folder.**
+_Note:_ Displays annual issued licence counts and total fees, highlighting economic fluctuations and growth trends over the study period.
+
 
 </details>
