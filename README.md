@@ -14,7 +14,7 @@ This project aimed to develop an end-to-end **Data Analytic Platform (DAP)** on 
 
 ## Dataset
 
-**City of Vancouver Business Licences (2013–2024)**, a public open dataset containing detailed records of business licences issued in the City of Vancouver from 2013 up to May 5, 2024. [City of Vancouver Open Data Portal](https://opendata.vancouver.ca/explore/dataset/business-licences-2013-to-2024/)
+**City of Vancouver Business Licences (2013–2024)**, a public open dataset containing detailed records of business licences issued in the City of Vancouver from 2013 to May 5, 2024. [City of Vancouver Open Data Portal](https://opendata.vancouver.ca/explore/dataset/business-licences-2013-to-2024/)
 
 ### Key Attributes
 
@@ -22,7 +22,7 @@ This project aimed to develop an end-to-end **Data Analytic Platform (DAP)** on 
 - **Business Information:** Business name and trade name, business type category (original classification), number of employees, and fee paid for the licence.
 - **Location Information:** Business address and geographic coordinates (if the business is within city limits).
 
-In total, the dataset contains over 780,000 records, reflecting the city’s active business landscape over 11+ years. (Under Licence By-law No. 4450, every business in Vancouver must obtain a valid licence to operate).
+The dataset contains over 780,000 records, reflecting the city’s active business landscape over 11+ years. (Under Licence By-law No. 4450, every business in Vancouver must obtain a valid licence to operate).
 
 > **Note:** In May 2024, the City streamlined its business licence categories, consolidating 500+ business types into fewer than 100. This project’s analysis uses the original categories for consistency across 2013–2024 data. (Records from 2013–early 2024 use the pre-consolidation categories, as provided in the open dataset.) Data quality considerations from the source were also noted. For example, addresses for home-based businesses are partially redacted for privacy, and a unique ID (Licence RSN) is used to identify each licence to avoid any duplication issues.
 
