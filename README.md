@@ -63,7 +63,7 @@ _Note_: Demonstrates secure storage of raw dataset using AWS KMS-managed keys.
 Using **AWS Glue DataBrew**, the dataset was profiled and cleaned through a no-code/low-code interface. This involved handling missing or anonymized fields (for instance, some home-based businesses lack address details by design  [City of Vancouver Open Data Portal](https://opendata.vancouver.ca/explore/dataset/business-licences-2013-to-2024/)), standardizing date and string formats, and filtering out irrelevant or duplicate records. A **DataBrew** _recipe_ was created to document all transformation steps (e.g., trimming whitespace in business names and converting the two-digit `FOLDERYEAR` field into a full year). This recipe was then applied in a DataBrew job, which output a **cleansed, enriched dataset** back to S3 in parquet format.
 
 <p align="center">
-  <img src="images/figure_35_part1.png" alt="AWS Glue DataBrew Cleaning Recipe Configuration" width="500" height="300">
+  <img src="images/figure_35_part1.png" alt="AWS Glue DataBrew Cleaning Recipe Configuration" width="300" height="500">
 </p>
 
 _Note:_ Highlights visual transformation steps applied to prepare clean, queryable data.
