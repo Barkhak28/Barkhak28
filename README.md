@@ -2,14 +2,16 @@
 
 <img align="right" src="images/cloud_foundation_badge.png" width="100">
 
-_Cloud Computing Foundation_ certification badge earned by *Barkha Kukreja*, demonstrating fundamental cloud expertise. This portfolio project leverages those cloud skills to deliver business insights from real-world data. The project showcases an AWS-powered data analytics pipeline developed to derive insights from the City of Vancouver’s business licence dataset.
+_Cloud Computing Foundation_ certification badge earned by **Barkha Kukreja**, demonstrating fundamental cloud expertise. This portfolio project leverages those cloud skills to deliver business insights from real-world data. The project showcases an AWS-powered data analytics pipeline developed to derive insights from the City of Vancouver’s business licence dataset.
 
 ---
 
 <details>
   <summary><strong>Objective</strong></summary>
 
+<p>
 This project aimed to develop an end-to-end **Data Analytic Platform (DAP)** on AWS to analyze **City of Vancouver business license data (2013–2024)** and uncover meaningful business insights. This involved designing a robust cloud-based data pipeline to ingest and process a large public dataset, ensure data quality and security, and enable interactive analysis. By accomplishing this, the project demonstrates how cloud services can transform open data into valuable insights into urban business activity, supporting data-driven decision-making for stakeholders (e.g., city officials, entrepreneurs, or potential investors).
+</p>
 
 </details>
 
@@ -43,6 +45,7 @@ _Note:_ Displays annual issued licence counts and total fees, highlighting econo
 <details>
   <summary><strong>Methodology</strong></summary>
 
+<p>
 To achieve the project objectives, a full AWS-based data pipeline was implemented with the following steps:
 
 **Data Ingestion:**  
@@ -98,12 +101,14 @@ Throughout the process, **AWS CloudWatch** and **AWS CloudTrail** were enabled t
 </p>
 <em>Figure No. 44 (Part 2 – AWS CloudWatch Dashboard for Project Metrics)</em>  
 <em>Note:</em> Displays usage metrics and query performance logs for data pipeline visibility.
+</p>
 
 </details>
 
 <details>
   <summary><strong>Tools & Technologies</strong></summary>
 
+<p>
 **Amazon S3:**  
 Scalable object storage used as the data lake for this project. Raw CSV data and transformed parquet data reside in S3, benefiting from high durability and integration with other AWS services.
 
@@ -232,6 +237,7 @@ Graphical outputs highlighting important findings. For example, the Figure below
 
 **Documentation & Presentation:**  
 A comprehensive report (in the form of this README and an accompanying slide deck) describing the project approach, cloud architecture diagrams of the solution, and a discussion of insights gained. This documentation is intended for academic review and for showcasing the project to potential employers or clients, demonstrating both technical implementation and business analysis outcomes.
+</p>
 
 </details>
 
@@ -239,6 +245,7 @@ A comprehensive report (in the form of this README and an accompanying slide dec
 <details>
   <summary><strong>Insights & Findings</strong></summary>
 
+<p>
 Below Figure - Business Licensing Activity Patterns. The chart above illustrates Vancouver’s business licensing activity over 2013–2024, showing **annual licences issued (purple line) and total licence fees collected (teal columns)**. There was steady growth in the number of business licences issued each year from 2013 through 2019, reflecting a robust local economy and increasing entrepreneurial activity. The peak occurred in 2019, where over **80,000** licences were issued, corresponding to roughly **$12 million** in total fees collected by the city. In 2020, a noticeable dip in new licences (and revenue) is observed – a likely impact of the COVID-19 pandemic and economic slowdown during that year. However, the trend rebounded in 2021 and onward, with 2022–2023 nearly returning to or exceeding pre-pandemic levels. (_2024 data in the chart covers only Jan–May 2024, hence appears lower_.) This temporal analysis highlights how external events can significantly influence business activity in the city.
 
 <p align="center">
@@ -247,13 +254,18 @@ Below Figure - Business Licensing Activity Patterns. The chart above illustrates
 <em>Figure No. 28 (Part 1 – A graph for business licensing activity patterns and yearly contributions from business authorization fees in White Rock city from 2013–2024)</em>  
 <em>Note:</em> Displays annual issued licence counts and total fees, highlighting economic fluctuations and growth trends.
 
-**Dominant Business Categories**: The analysis revealed that certain business types consistently led in number of licences. In particular, the _“Office”_ category (representing general office-based businesses) had the highest count of licences each year, making it the most common business type in Vancouver’s economy. Other top categories included **Retail Trade** (various stores and dealers) and **Food Services** (restaurants, cafes, etc.), which account for many active businesses. This dominance of offices and retail/food services indicates Vancouver’s role as a commercial and service-oriented hub. Meanwhile, some niche categories had relatively few licences. The diversity of over 500 business categories (pre-2024) also suggested a very heterogeneous business environment, ranging from tech startups to home-based artisans.
+<p>
 
-**Geographical Distribution**: Business licence data by location underscored the _Downtown core (Central Business District) as the primary locus of business activity. The downtown area consistently saw the **highest concentration of active licences**, which is unsurprising given it’s the city’s commercial center. Other commercial corridors (e.g., Broadway, Metrotown vicinity just outside Vancouver) also showed high business counts. In contrast, residential neighbourhoods on the city’s outskirts had fewer active businesses and new licences. Interestingly, the data also pointed to higher rates of business churn in certain areas – for instance, the Renfrew/Collingwood neighbourhood had a notable number of licences with “Gone Out of Business” status relative to its total licences. This could suggest local economic challenges or shifting business demographics in that area, warranting further investigation by city planners or business development agencies.
+- **Dominant Business Categories**: The analysis revealed that certain business types consistently led in number of licences. In particular, the _“Office”_ category (representing general office-based businesses) had the highest count of licences each year, making it the most common business type in Vancouver’s economy. Other top categories included **Retail Trade** (various stores and dealers) and **Food Services** (restaurants, cafes, etc.), which account for many active businesses. This dominance of offices and retail/food services indicates Vancouver’s role as a commercial and service-oriented hub. Meanwhile, some niche categories had relatively few licences. The diversity of over 500 business categories (pre-2024) also suggested a very heterogeneous business environment, ranging from tech startups to home-based artisans.
 
-**Business Survival & Turnover**: By tracking licence statuses year over year, the project derived insights into business survival rates. A significant majority of licences each year were renewals of existing businesses (or continuations), indicating many businesses survive year-to-year. However, every year, a fraction of businesses do not renew – some formally close (marked as _business closed/gone out of business in the data_) while others possibly let licences lapse. For example, around **5–8%** of licences in a given year were not renewed the next year, hinting at the annual turnover in the business community. Certain business types, like seasonal markets or short-term ventures, showed higher turnover, whereas essential services (e.g., offices, healthcare, utilities) showed higher renewal rates. This insight into business longevity can be valuable for understanding the stability and dynamism of the local economy.
+- **Geographical Distribution**: Business licence data by location underscored the _Downtown core (Central Business District) as the primary locus of business activity. The downtown area consistently saw the **highest concentration of active licences**, which is unsurprising given it’s the city’s commercial center. Other commercial corridors (e.g., Broadway, Metrotown vicinity just outside Vancouver) also showed high business counts. In contrast, residential neighbourhoods on the city’s outskirts had fewer active businesses and new licences. Interestingly, the data also pointed to higher rates of business churn in certain areas – for instance, the Renfrew/Collingwood neighbourhood had a notable number of licences with “Gone Out of Business” status relative to its total licences. This could suggest local economic challenges or shifting business demographics in that area, warranting further investigation by city planners or business development agencies.
 
-**Economic Impact**: The financial aspect of the data – licence fees – highlights that **business licensing is not only a regulatory measure but also a revenue stream for the city**. Over the 2013–2023, the City of Vancouver collected well over **$80 million** in cumulative licence fees from businesses. The upward trend in fees collected (peaking in 2019, as shown in Figure) aligns with the growth in the number of licences but also reflects periodic fee adjustments and the entry of higher-fee business categories. These revenues potentially support city services and small business programs. The dip in 2020 fee revenue was significant, reinforcing how economic downturns directly affect municipal revenue. Post-2020, increasing revenues indicate recovery. This financial insight underscores the importance of supporting business continuity – keeping businesses open not only benefits employment and the economy but also the city’s fiscal health.
+- **Business Survival & Turnover**: By tracking licence statuses year over year, the project derived insights into business survival rates. A significant majority of licences each year were renewals of existing businesses (or continuations), indicating many businesses survive year-to-year. However, every year, a fraction of businesses do not renew – some formally close (marked as _business closed/gone out of business in the data_) while others possibly let licences lapse. For example, around **5–8%** of licences in a given year were not renewed the next year, hinting at the annual turnover in the business community. Certain business types, like seasonal markets or short-term ventures, showed higher turnover, whereas essential services (e.g., offices, healthcare, utilities) showed higher renewal rates. This insight into business longevity can be valuable for understanding the stability and dynamism of the local economy.
+
+- **Economic Impact**: The financial aspect of the data – licence fees – highlights that **business licensing is not only a regulatory measure but also a revenue stream for the city**. Over the 2013–2023, the City of Vancouver collected well over **$80 million** in cumulative licence fees from businesses. The upward trend in fees collected (peaking in 2019, as shown in Figure) aligns with the growth in the number of licences but also reflects periodic fee adjustments and the entry of higher-fee business categories. These revenues potentially support city services and small business programs. The dip in 2020 fee revenue was significant, reinforcing how economic downturns directly affect municipal revenue. Post-2020, increasing revenues indicate recovery. This financial insight underscores the importance of supporting business continuity – keeping businesses open not only benefits employment and the economy but also the city’s fiscal health.
+</p>
+
+</p>
 
 </details>
 
