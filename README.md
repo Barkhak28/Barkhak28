@@ -202,4 +202,3 @@ The above Figure also shows Business Licensing Activity Patterns. The chart abov
 Feel free to connect for more information or opportunities to collaborate:
 
 - **LinkedIn**: [Barkha Kukreja](https://www.linkedin.com/in/barkhakukreja/)
-- **Email**: [Click to Email](mailto:barkhakkukreja@gmail.com)
