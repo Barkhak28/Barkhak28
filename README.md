@@ -108,6 +108,7 @@ _Note:_ Displays usage metrics and query performance logs for data pipeline visi
   <summary><strong>Tools & Technologies</strong></summary>
 
 <p>
+
 **Amazon S3:**  
 Scalable object storage used as the data lake for this project. Raw CSV data and transformed parquet data reside in S3, benefiting from high durability and integration with other AWS services.
 
